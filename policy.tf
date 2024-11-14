@@ -1,6 +1,8 @@
 resource "spacelift_policy" "cost_restriction" {
-  name   = "infracost cost restriction"
+  for_each = var.policies
+
+  name   = each.key
   type   = "PLAN"
-  body   = file("./cost_restriction.rego")
+  body   = each.value
   labels = ["autoattach:infracost"]
 }
