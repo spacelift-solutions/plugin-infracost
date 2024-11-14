@@ -4,14 +4,14 @@ variable "infracost_api_key" {
   sensitive   = true
 }
 
+variable "policies" {
+  type        = map(string)
+  description = "Map of policies to create/automatically attach to any stack that runs infracost"
+  default     = {}
+}
+
 variable "space_id" {
   type        = string
   description = "The space to create resources in"
   default     = "root"
-}
-
-variable "policies" {
-  type = map(string)
-  description = "Map of policies to create/automatically attach to any stack that runs infracost"
-  default = {}
 }
