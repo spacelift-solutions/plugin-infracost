@@ -1,5 +1,13 @@
 # Plugin Infracost
 
+> **⚠️ DEPRECATED**: This repository is no longer maintained. The Infracost plugin functionality is now built directly into Spacelift's native plugins feature. Customers can install and configure the Infracost plugin through the Spacelift UI or API instead of using this Terraform module.
+>
+> For current documentation on using the Infracost plugin, please refer to the [Spacelift documentation](https://docs.spacelift.io).
+
+---
+
+## Legacy Documentation
+
 This module adds the `infracost` plugin to your Spacelift account.
 
 ## Usage
